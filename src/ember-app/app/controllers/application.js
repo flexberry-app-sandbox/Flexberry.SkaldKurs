@@ -32,7 +32,7 @@ export default Controller.extend({
               link: 'i-i-s-skald-kurs-сотрудник-l',
               caption: i18n.t('forms.application.sitemap.skald-kurs.сотрудник.i-i-s-skald-kurs-сотрудник-l.caption'),
               title: i18n.t('forms.application.sitemap.skald-kurs.сотрудник.i-i-s-skald-kurs-сотрудник-l.title'),
-              icon: 'briefcase',
+              icon: 'paperclip',
               children: null
             }]
           }, {
@@ -43,13 +43,13 @@ export default Controller.extend({
               link: 'i-i-s-skald-kurs-товар-l',
               caption: i18n.t('forms.application.sitemap.skald-kurs.товар-на-складе.i-i-s-skald-kurs-товар-l.caption'),
               title: i18n.t('forms.application.sitemap.skald-kurs.товар-на-складе.i-i-s-skald-kurs-товар-l.title'),
-              icon: 'folder',
+              icon: 'calendar',
               children: null
             }, {
               link: 'i-i-s-skald-kurs-склад-l',
               caption: i18n.t('forms.application.sitemap.skald-kurs.товар-на-складе.i-i-s-skald-kurs-склад-l.caption'),
               title: i18n.t('forms.application.sitemap.skald-kurs.товар-на-складе.i-i-s-skald-kurs-склад-l.title'),
-              icon: 'phone',
+              icon: 'chart line',
               children: null
             }]
           }, {
@@ -60,19 +60,19 @@ export default Controller.extend({
               link: 'i-i-s-skald-kurs-накладная-l',
               caption: i18n.t('forms.application.sitemap.skald-kurs.информация-о-заказе.i-i-s-skald-kurs-накладная-l.caption'),
               title: i18n.t('forms.application.sitemap.skald-kurs.информация-о-заказе.i-i-s-skald-kurs-накладная-l.title'),
-              icon: 'archive',
+              icon: 'building',
               children: null
             }, {
               link: 'i-i-s-skald-kurs-заказ-l',
               caption: i18n.t('forms.application.sitemap.skald-kurs.информация-о-заказе.i-i-s-skald-kurs-заказ-l.caption'),
               title: i18n.t('forms.application.sitemap.skald-kurs.информация-о-заказе.i-i-s-skald-kurs-заказ-l.title'),
-              icon: 'phone',
+              icon: 'list',
               children: null
             }, {
               link: 'i-i-s-skald-kurs-документ-l',
               caption: i18n.t('forms.application.sitemap.skald-kurs.информация-о-заказе.i-i-s-skald-kurs-документ-l.caption'),
               title: i18n.t('forms.application.sitemap.skald-kurs.информация-о-заказе.i-i-s-skald-kurs-документ-l.title'),
-              icon: 'list',
+              icon: 'chart bar',
               children: null
             }]
           }]
