@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Заказ",
+      "projection": "ЗаказL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Сотрудник",
+      "projection": "СотрудникL",
+      "detailModelName": null
+    },
+    {
+      "master": "товар",
+      "displayAttributeName": "название",
+      "required": true,
+      "relationName": "ЗаписьВНакладной.Товар",
+      "projection": "ТоварL",
+      "detailModelName": "i-i-s-skald-kurs-запись-в-накладной"
+    }
+  ],
+  "external": false,
+  "caption": "Накладная",
+  "name": "IISSkaldKursНакладнаяE",
+  "className": "НакладнаяE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-skald-kurs-накладная",
+      "modelProjection": "НакладнаяE"
+    }
+  ]
+}

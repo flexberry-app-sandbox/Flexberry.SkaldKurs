@@ -1,0 +1,183 @@
+﻿{
+  "name": "IISSkaldKursЗаказ",
+  "modelName": "i-i-s-skald-kurs-заказ",
+  "className": "Заказ",
+  "nameSpace": "IIS.SkaldKurs",
+  "parentModelName": "i-i-s-skald-kurs-документ",
+  "parentClassName": "Документ",
+  "attrs": [
+    {
+      "name": "датаОплаты",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "датаОтгрузки",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "статус",
+      "type": "i-i-s-skald-kurs-состояние-заказа",
+      "flexberryType": "СостояниеЗаказа",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "цена",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудник",
+      "relatedTo": "i-i-s-skald-kurs-сотрудник",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "строкаЗаказа",
+      "relatedTo": "i-i-s-skald-kurs-строка-заказа",
+      "inverse": "заказ"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ЗаказE",
+      "modelName": "i-i-s-skald-kurs-заказ",
+      "attrs": [
+        {
+          "name": "датаОплаты",
+          "caption": "Дата оплаты",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "датаОтгрузки",
+          "caption": "Дата отгрузки",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "статус",
+          "caption": "Статус",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Фамилия",
+          "lookupValueField": "фамилия",
+          "relationName": "Сотрудник",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фамилия",
+              "caption": "Фамилия",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Сотрудник",
+          "name": "сотрудник",
+          "relatedTo": "i-i-s-skald-kurs-сотрудник",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "СтрокаЗаказаE",
+          "caption": "Строка заказа",
+          "name": "строкаЗаказа",
+          "relatedTo": "i-i-s-skald-kurs-строка-заказа",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ЗаказL",
+      "modelName": "i-i-s-skald-kurs-заказ",
+      "attrs": [
+        {
+          "name": "датаОплаты",
+          "caption": "Дата оплаты",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "датаОтгрузки",
+          "caption": "Дата отгрузки",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "статус",
+          "caption": "Статус",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сотрудник",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фамилия",
+              "caption": "Фамилия",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Фамилия",
+          "name": "сотрудник",
+          "relatedTo": "i-i-s-skald-kurs-сотрудник",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

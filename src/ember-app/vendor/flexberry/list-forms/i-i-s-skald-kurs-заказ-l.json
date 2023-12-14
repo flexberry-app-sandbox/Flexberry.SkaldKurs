@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-skald-kurs-заказ-e",
+  "editForm": "i-i-s-skald-kurs-заказ-e",
+  "external": false,
+  "caption": "Заказ",
+  "name": "IISSkaldKursЗаказL",
+  "className": "ЗаказL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-skald-kurs-заказ",
+      "modelProjection": "ЗаказL"
+    }
+  ]
+}

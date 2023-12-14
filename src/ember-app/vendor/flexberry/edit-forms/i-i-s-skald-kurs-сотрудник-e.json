@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Сотрудник",
+  "name": "IISSkaldKursСотрудникE",
+  "className": "СотрудникE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-skald-kurs-сотрудник",
+      "modelProjection": "СотрудникE"
+    }
+  ]
+}

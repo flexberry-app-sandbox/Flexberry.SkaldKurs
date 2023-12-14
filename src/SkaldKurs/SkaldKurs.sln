@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkaldKurs.Objects", "Objects/SkaldKurs.Objects.csproj", "1fb7ab3a-b3c1-456c-9639-b841cda428c1"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkaldKurs.Tests", "Tests/SkaldKurs.Tests.csproj", "10cc35b8-912c-40d9-ac44-9ab49146ded9"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkaldKurs.ODataBackend", "ODataBackend/SkaldKurs.ODataBackend.csproj", "c18d2415-3ae5-4c90-9117-67e0b6a8dff4"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkaldKurs.IntegrationTests", "IntegrationTests/SkaldKurs.IntegrationTests.csproj", "bdcfb7e0-0b04-4515-a687-1304813deaf0"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+Debug|Any CPU = Debug|Any CPU
+Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		1fb7ab3a-b3c1-456c-9639-b841cda428c1.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		1fb7ab3a-b3c1-456c-9639-b841cda428c1.Debug|Any CPU.Build.0 = Debug|Any CPU
+		1fb7ab3a-b3c1-456c-9639-b841cda428c1.Release|Any CPU.ActiveCfg = Release|Any CPU
+		1fb7ab3a-b3c1-456c-9639-b841cda428c1.Release|Any CPU.Build.0 = Release|Any CPU
+		10cc35b8-912c-40d9-ac44-9ab49146ded9.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		10cc35b8-912c-40d9-ac44-9ab49146ded9.Debug|Any CPU.Build.0 = Debug|Any CPU
+		10cc35b8-912c-40d9-ac44-9ab49146ded9.Release|Any CPU.ActiveCfg = Release|Any CPU
+		10cc35b8-912c-40d9-ac44-9ab49146ded9.Release|Any CPU.Build.0 = Release|Any CPU
+		c18d2415-3ae5-4c90-9117-67e0b6a8dff4.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		c18d2415-3ae5-4c90-9117-67e0b6a8dff4.Debug|Any CPU.Build.0 = Debug|Any CPU
+		c18d2415-3ae5-4c90-9117-67e0b6a8dff4.Release|Any CPU.ActiveCfg = Release|Any CPU
+		c18d2415-3ae5-4c90-9117-67e0b6a8dff4.Release|Any CPU.Build.0 = Release|Any CPU
+		bdcfb7e0-0b04-4515-a687-1304813deaf0.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		bdcfb7e0-0b04-4515-a687-1304813deaf0.Debug|Any CPU.Build.0 = Debug|Any CPU
+		bdcfb7e0-0b04-4515-a687-1304813deaf0.Release|Any CPU.ActiveCfg = Release|Any CPU
+		bdcfb7e0-0b04-4515-a687-1304813deaf0.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistencehttp://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="Olingo4PG">
+        <class>SkaldKurs.model.StrokaZakaza</class>
+        <class>SkaldKurs.model.ZapisVNakladnoj</class>
+        <class>SkaldKurs.model.Tovar</class>
+        <class>SkaldKurs.model.TovarNaSklade</class>
+        <class>SkaldKurs.model.Zakaz</class>
+        <class>SkaldKurs.model.Sklad</class>
+        <class>SkaldKurs.model.Sotrudnik</class>
+        <class>SkaldKurs.model.Dokument</class>
+        <class>SkaldKurs.model.Nakladnaya</class>
+        <class>SkaldKurs.model.FlexberryAdvLimit</class>
+        <class>SkaldKurs.model.NewPlatformFlexberryFlexberryUserSetting</class>
+        <class>SkaldKurs.model.NewPlatformFlexberryServicesLock</class>
+        <class>SkaldKurs.model.IISCaseberryLoggingObjectsApplicationLog</class>
+
+    </persistence-unit>
+</persistence>

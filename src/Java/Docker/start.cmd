@@ -1,0 +1,1 @@
+docker-compose -p skaldkurs-java up -d

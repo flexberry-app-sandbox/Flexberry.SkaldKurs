@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Сотрудник",
+      "projection": "СотрудникL",
+      "detailModelName": null
+    },
+    {
+      "master": "товар",
+      "displayAttributeName": "название",
+      "required": true,
+      "relationName": "СтрокаЗаказа.Товар",
+      "projection": "ТоварL",
+      "detailModelName": "i-i-s-skald-kurs-строка-заказа"
+    }
+  ],
+  "external": false,
+  "caption": "Заказ",
+  "name": "IISSkaldKursЗаказE",
+  "className": "ЗаказE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-skald-kurs-заказ",
+      "modelProjection": "ЗаказE"
+    }
+  ]
+}

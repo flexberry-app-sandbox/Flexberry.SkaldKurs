@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Документ",
+  "name": "IISSkaldKursДокументE",
+  "className": "ДокументE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-skald-kurs-документ",
+      "modelProjection": "ДокументE"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+<h3 class="ui header">{{t "forms.i-i-s-skald-kurs-товар-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.кодТовара
+      class=(if (v-get validationModel "кодТовара" "isInvalid") "error")
+      label=(t "forms.i-i-s-skald-kurs-товар-e.кодТовара-caption")
+      data-test-i-i-s-skald-kurs-товар-e-кодТовара=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "кодТовара" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.название
+      class=(if (v-get validationModel "название" "isInvalid") "error")
+      label=(t "forms.i-i-s-skald-kurs-товар-e.название-caption")
+      data-test-i-i-s-skald-kurs-товар-e-название=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "название" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.единицаИзмерения
+      class=(if (v-get validationModel "единицаИзмерения" "isInvalid") "error")
+      label=(t "forms.i-i-s-skald-kurs-товар-e.единицаИзмерения-caption")
+      data-test-i-i-s-skald-kurs-товар-e-единицаИзмерения=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "единицаИзмерения" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.описание
+      class=(if (v-get validationModel "описание" "isInvalid") "error")
+      label=(t "forms.i-i-s-skald-kurs-товар-e.описание-caption")
+      data-test-i-i-s-skald-kurs-товар-e-описание=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "описание" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.цена
+      class=(if (v-get validationModel "цена" "isInvalid") "error")
+      label=(t "forms.i-i-s-skald-kurs-товар-e.цена-caption")
+      data-test-i-i-s-skald-kurs-товар-e-цена=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "цена" "message")}}
+  </div>
+</form>

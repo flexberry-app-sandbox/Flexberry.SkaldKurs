@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-skald-kurs-товар-e",
+  "editForm": "i-i-s-skald-kurs-товар-e",
+  "external": false,
+  "caption": "Товар",
+  "name": "IISSkaldKursТоварL",
+  "className": "ТоварL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-skald-kurs-товар",
+      "modelProjection": "ТоварL"
+    }
+  ]
+}

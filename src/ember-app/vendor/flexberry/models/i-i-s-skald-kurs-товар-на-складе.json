@@ -1,0 +1,122 @@
+﻿{
+  "name": "IISSkaldKursТоварНаСкладе",
+  "modelName": "i-i-s-skald-kurs-товар-на-складе",
+  "className": "ТоварНаСкладе",
+  "nameSpace": "IIS.SkaldKurs",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "количество",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "ряд",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "этаж",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "ячейкаТовара",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "товар",
+      "relatedTo": "i-i-s-skald-kurs-товар",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "склад",
+      "relatedTo": "i-i-s-skald-kurs-склад",
+      "inverse": "товарНаСкладе"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТоварНаСкладеE",
+      "modelName": "i-i-s-skald-kurs-товар-на-складе",
+      "attrs": [
+        {
+          "name": "этаж",
+          "caption": "Этаж",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "ряд",
+          "caption": "Ряд",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "ячейкаТовара",
+          "caption": "Ячейка товара",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Название",
+          "lookupValueField": "название",
+          "relationName": "Товар",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "название",
+              "caption": "Название",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Товар",
+          "name": "товар",
+          "relatedTo": "i-i-s-skald-kurs-товар",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

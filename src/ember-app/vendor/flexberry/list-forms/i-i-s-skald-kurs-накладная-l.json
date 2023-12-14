@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-skald-kurs-накладная-e",
+  "editForm": "i-i-s-skald-kurs-накладная-e",
+  "external": false,
+  "caption": "Накладная",
+  "name": "IISSkaldKursНакладнаяL",
+  "className": "НакладнаяL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-skald-kurs-накладная",
+      "modelProjection": "НакладнаяL"
+    }
+  ]
+}

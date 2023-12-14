@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-skald-kurs-документ-e",
+  "editForm": "i-i-s-skald-kurs-документ-e",
+  "external": false,
+  "caption": "Документ",
+  "name": "IISSkaldKursДокументL",
+  "className": "ДокументL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-skald-kurs-документ",
+      "modelProjection": "ДокументL"
+    }
+  ]
+}

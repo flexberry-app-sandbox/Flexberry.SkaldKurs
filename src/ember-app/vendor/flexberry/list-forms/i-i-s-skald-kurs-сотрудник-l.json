@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-skald-kurs-сотрудник-e",
+  "editForm": "i-i-s-skald-kurs-сотрудник-e",
+  "external": false,
+  "caption": "Сотрудник",
+  "name": "IISSkaldKursСотрудникL",
+  "className": "СотрудникL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-skald-kurs-сотрудник",
+      "modelProjection": "СотрудникL"
+    }
+  ]
+}

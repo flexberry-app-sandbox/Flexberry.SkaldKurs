@@ -1,0 +1,81 @@
+﻿{
+  "applicationCaption": "Skald kurs",
+  "applicationTitle": "Skald kurs",
+  "items": [
+    {
+      "link": null,
+      "menuName": "skald-kurs",
+      "caption": "SkaldKurs",
+      "title": "SkaldKurs",
+      "children": [
+        {
+          "link": null,
+          "menuName": "сотрудник",
+          "caption": "Сотрудник",
+          "title": "Сотрудник",
+          "children": [
+            {
+              "link": "i-i-s-skald-kurs-сотрудник-l",
+              "menuName": null,
+              "caption": "Сотрудник",
+              "title": "",
+              "children": null
+            }
+          ]
+        },
+        {
+          "link": null,
+          "menuName": "товар-на-складе",
+          "caption": "Товар на складе",
+          "title": "Товар на складе",
+          "children": [
+            {
+              "link": "i-i-s-skald-kurs-товар-l",
+              "menuName": null,
+              "caption": "Товар",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-skald-kurs-склад-l",
+              "menuName": null,
+              "caption": "Склад",
+              "title": "",
+              "children": null
+            }
+          ]
+        },
+        {
+          "link": null,
+          "menuName": "информация-о-заказе",
+          "caption": "Информация о заказе",
+          "title": "Информация о заказе",
+          "children": [
+            {
+              "link": "i-i-s-skald-kurs-накладная-l",
+              "menuName": null,
+              "caption": "Накладная",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-skald-kurs-заказ-l",
+              "menuName": null,
+              "caption": "Заказ",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-skald-kurs-документ-l",
+              "menuName": null,
+              "caption": "Документ",
+              "title": "",
+              "children": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}
